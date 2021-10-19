@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://cdn0.iconfinder.com/data/icons/seo-web-4-1/128/Vigor_Users-People-Friends-256.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Random User</title>
+</head>
+
+<body>
+    <section id="form-sec">
+        <div class="container">
+            <form>
+                <ul class="form-lists">
+                    <li>
+                        <select name="gender" id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Girl</option>
+                        </select>
+                    </li>
+                    <li><input id="counter" value="0" type="number" name="count" placeholder="User Count" required></li>
+                    <li> <button type="button" onclick="submit_btn()" class="btn form-btn">Submit</button></li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <section id="users-sec">
+        <div class="container container-user">
+            <div class="fiter-field">
+                <div class="age-title">
+                    <h2>AGE</h2>
+                </div>
+                <div class="age-filter">
+                    <div class="age-range">
+                        <label for="">Min</label>
+                        <input type="range" id="min-input" value="0" max="100" onchange="minChange()">
+                       
+                    </div>
+                    <div class="age-range">
+                        <label for="">Max</label>
+                        <input type="range" id="max-input" value="0" max="100" onchange="maxChange()">
+                      
+                    </div>
+                </div>
+                <div class="age-range">
+                    Min : <label for="" id="min">0</label>
+                    Max : <label for="" id="max" >0</label>
+                </div>
+                <div class="city-title">
+                    <h2>City</h2>
+                </div>
+                <div class="city-filter">                    
+                </div>
+                <div class="btn-field"><button class="btn user-btn" onclick="userFilter()">Filter</button></div>
+                <div class="btn-field"><button class="btn user-btn" onclick="newQuery()">New Query</button></div>
+            </div>
+            <div class="filter-list">
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

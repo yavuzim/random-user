@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: "Architects Daughter",sans-serif; */
+    font-family: "Indie Flower",sans-serif;
+}
+section{
+    height: 100vh;
+}
+section#form-sec{
+   /*  display: none;  */
+}
+.container{
+    width: 25rem;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+}
+.form-lists li{
+    padding: 0.8rem;
+    font-size: 2rem;
+}
+.form-lists li input,#gender,.form-btn{
+    font-size: 2rem;
+    width: 100%;
+}
+.btn{
+    cursor: pointer;
+    background-color: #ede0d4;
+    border: none;
+}
+.form-btn:hover,.user-btn:hover{
+    background-color: #ddb892;
+}
+section#users-sec{
+    display: none;  
+}
+.container-user{
+    width:1250px;
+    max-width: 1250px;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+.fiter-field{
+    padding: 1rem 0 1rem 1rem;
+    border: 0.1rem solid;
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+}
+.age-filter{
+    display: flex;
+    justify-content: space-around;
+}
+.age-range{
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+}
+.city-title{
+    margin-top: 1rem;
+}
+#city{
+    width: 98%;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+.user-btn{
+    width: 98%;
+    margin-top: 0.4rem;
+    font-size: 2rem;
+}
+.filter-list{
+   width: 47%;
+   position: absolute;
+   top: 1rem;
+   left: 30rem;
+   display: grid;
+   grid-template-columns: repeat(4,9.2rem);
+}
+.image-filed{
+    border: 1px solid;
+    margin:1.1rem;
+}
+.image{
+    display: block;
+    width:8rem;
+}
+.image>img{
+    width:6rem;
+    height: 8rem;
+    margin-left: 5px;
+}
